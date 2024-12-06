@@ -25,6 +25,8 @@ spec:
         image: docker.io/alanrenouf/sampleveco:1.0
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: dhruv-docker-secret
 ---
 apiVersion: v1
 kind: Service
